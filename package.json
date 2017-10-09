@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "script": {
     "start": "/bin/start",
-    "test": "/bin/test tests/",
+    "test": "/bin/test tests/"
   },
   "dependencies": {
     "morgan": "^1.9.0"
