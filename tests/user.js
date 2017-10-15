@@ -17,11 +17,19 @@ describe('user', function() {
       should.exist(err)
       done()
     })
+
+  })
+  it('doesn\'t save because missing parameter pwd', function(done) {
+    user.save("only pwd", function(err) {
+      should.exist(err)
+      done()
+    })
   })
 
   it('get', function(done) {
-    // do smthg
-
-    done()
+    user.save("ok", "name", function(err) {
+      should.not.exist(err)
+      done()
+    })
   })
 })
